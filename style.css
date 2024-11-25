@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@font-face {
+  font-family: mainFont;
+  src: url(assets/fonts/GrandCru-LightS.otf);
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -34,9 +43,8 @@
 .nav-links a {
   text-decoration: none;
   color: #a35503;
-  font-family: "Lato", sans-serif;
+  font-family: mainFont, sans-serif;
   font-weight: 900;
-  font-style: italic;
   font-size: x-large;
   display: inline-block;
   transition: transform 0.3s ease;
@@ -44,6 +52,34 @@
 
 .nav-links a:hover {
   transform: translateY(-5px);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background-color: #20160928;
+  backdrop-filter: blur(20px);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0;
+  font-family: mainFont, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+footer a:hover {
+  color: aliceblue;
 }
 
 @media screen and (max-width: 820px) {
