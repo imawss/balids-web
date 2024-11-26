@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HONEYMUN'25 | Team</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-transparent.ico"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-image: url(assets/img/bg-edited.png);
+        background-size: cover;
+        margin: 0;
+        font-family: myFont, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .glass-container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        padding: 20px;
+        max-width: 800px;
+        width: 90%;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+      }
+
+      .slider-header {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: myFont, sans-serif;
+        font-weight: 900;
+        color: #2d2226;
+        margin-bottom: 10px;
+      }
+
+      .slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+        justify-content: flex-start;
+        width: 1000%;
+      }
+
+      .slider-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slider-item img {
+        max-width: 80%;
+        max-height: 400px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      .slider-item h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2d2226;
+        margin-top: 10px;
+        text-align: center;
+        font-family: myFont, sans-serif;
+      }
+
+      .slider-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        padding: 0 10px;
+      }
+
+      .slider-controls button {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        border: none;
+        font-size: 40px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      .slider-controls button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      @media (max-width: 768px) {
+        .slider-header {
+          font-size: 18px;
+        }
+
+        .slider-item img {
+          max-width: 90%;
+          max-height: 300px;
+        }
+
+        .slider-item h3 {
+          font-size: 15px;
+        }
+
+        .logo img {
+          height: 45px;
+        }
+
+        .nav-links {
+          gap: 20px;
+        }
+
+        .nav-links a {
+          font-size: small;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/logo.jpg" alt="Logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="apply.html">Başvur</a>
+          <a href="team.html">Ekip</a>
+          <a href="contact.html">Bize Ulaşın</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="glass-container">
+      <div class="slider-header">Ekibimiz:</div>
+      <div class="slider">
+        <div class="slider-wrapper" id="sliderWrapper">
+          <div class="slider-item">
+            <img src="assets/img/team/konf-bask.png" alt="" />
+            <h3>Konferans Başkanı</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/aka-lider.jpg" alt="" />
+            <h3>Akademik Lider</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/aka-yard.jpg" alt="" />
+            <h3>Akademik Lider Yardımcısı</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/orga-yigit.png" alt="" />
+            <h3>Organizasyon Ekip Lideri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/orga-marin.jpg" alt="" />
+            <h3>Organizasyon Ekip Lideri Yardımcısı</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/finance.jpg" alt="" />
+            <h3>Finans Ekip Liderleri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/pr.jpg" alt="" />
+            <h3>Halkla İlişkiler Ekip Liderleri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/basin.jpg" alt="" />
+            <h3>Basın Ekip Liderleri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/ent.jpg" alt="" />
+            <h3>Eğlendirme Ekip Liderleri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/gozlemci.jpg" alt="" />
+            <h3>Gözlemci Ekip Liderleri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/guvenlik.jpg" alt="" />
+            <h3>Güvenlik Ekip Liderleri</h3>
+          </div>
+          <div class="slider-item">
+            <img src="assets/img/team/medya.jpg" alt="" />
+            <h3>Medya Ekip Lider</h3>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://instagram.com/jesusawss" target="_blank">
+        Tüm hakları saklıdır © Aras Arkan
+      </a>
+    </footer>
+
+    <script>
+      const sliderWrapper = document.getElementById("sliderWrapper");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      let currentIndex = 0;
+      showSlide(currentIndex);
+
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".slider-item");
+        const totalSlides = slides.length;
+
+        currentIndex = (index + totalSlides) % totalSlides;
+
+        sliderWrapper.style.transition = "none";
+        const offset = -currentIndex * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+
+        setTimeout(() => {
+          sliderWrapper.style.transition = "transform 0.5s ease";
+        }, 50);
+      }
+
+      prevBtn.addEventListener("click", () => {
+        showSlide(currentIndex - 1);
+      });
+
+      nextBtn.addEventListener("click", () => {
+        showSlide(currentIndex + 1);
+      });
+    </script>
+  </body>
+</html>
